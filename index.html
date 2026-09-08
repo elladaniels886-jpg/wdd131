@@ -1,157 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta 
-        name="description" 
-        content="WDD 131 - Dynamic Web Fundamentals by Daniella Isiuwa-Daniel. A page about web development, HTML, CSS, JavaScript, and responsive web design."
-    >
-
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals course home page for Daniella Isiuwa-Daniel, featuring web development projects, resources, and personal information.">
     <meta name="author" content="Daniella Isiuwa-Daniel">
-
+    
     <title>WDD 131 - Dynamic Web Fundamentals - Daniella Isiuwa-Daniel</title>
 
+    <!-- Google Fonts Preconnect and Link Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/base.css">
 
+    <!-- Script -->
     <script src="scripts/getdates.js" defer></script>
 </head>
-
 
 <body>
 
     <header>
-
-        <span id="course-title">
-            WDD 131 - Dynamic Web Fundamentals
-        </span>
-
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
         <nav>
-            <a href="https://www.linkedin.com/in/daniella-isiuwa-daniel-899655251/">
-                LinkedIn
-            </a>
-
-            <a href="https://byupw.instructure.com/">
-                Canvas
-            </a>
-
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng">
-                Favorite Scripture
-            </a>
-
-            <a href="#">
-                Final Project
-            </a>
+            <a href="https://www.linkedin.com/in/daniella-isiuwa-daniel-899655251/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng" target="_blank">Favorite Scripture</a>
+            <a href="#" target="_blank">Final Project</a>
         </nav>
-
     </header>
 
-
     <main>
+        <h1>Daniella Isiuwa-Daniel</h1>
 
-        <h1>Daniella Isiuwa-Daniel</h1> 
-
-
-        <!-- About Me Card -->
+        <!-- First Card: About Me -->
         <section class="card">
-
             <h2>About Me</h2>
-
             <div class="about-content">
                 <div class="about-text">
-                     <p>
-                    My name is Daniella Isiuwa-Daniel. I was born and bred in Nigeria.
-                    I am currently pursuing a degree in Software Development. I am
-                    interested in technology, web development, and creating digital
-                    solutions that can make people's lives easier.
-                </p>
+                    <p>
+                        My name is Daniella Isiuwa-Daniel. I was born and bred in Nigeria.
+                        I am currently pursuing a degree in Software Development. I am
+                        interested in technology, web development, and creating digital
+                        solutions that can make people's lives easier.
+                    </p>
                 </div>
-
-               
-
-                <img 
-                    src="images/danny.jpeg" 
-                    alt="Portrait of Daniella Isiuwa-Daniel"
-                    class="profile-image"
-                >
-
+                <img src="images/Daniella.webp" alt="Portrait of Daniella Isiuwa-Daniel" class="profile-image">
             </div>
-
 
             <div class="country-section">
-                
-                  <h3>Nigeria</h3>
-                  <div class="country-content">
-                     <img 
-                    src="images/nigeria-flag.png" 
-                    alt="Official flag of Nigeria"
-                    class="flag-image"
-                >
-                  <p>
-                    Nigeria is a country located in West Africa. It is known for its
-                    diverse cultures, languages, music, food, and vibrant population.
-                </p>
-
-                  </div>
-
-    
-
+                <h3>Nigeria</h3>
+                <div class="country-content">
+                    <img src="images/nigeria-flag.png" alt="Official flag of Nigeria" class="flag-image">
+                    <p>
+                        Nigeria is a country located in West Africa. It is known for its
+                        diverse cultures, languages, music, food, and vibrant population.
+                    </p>
+                </div>
             </div>
-
         </section>
 
-
-        <!-- Web Development Resources Card -->
-        <section class="card">
-
+        <!-- Second Card: Web Dev Resources -->
+        <section class="card resources-card">
             <h2>Web Dev Resources</h2>
-
             <ul>
-                <li>
-                    <a href="https://css-tricks.com/">
-                        CSS Tricks
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.w3schools.com/">
-                        W3Schools
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://developer.mozilla.org/">
-                        MDN Web Docs
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.freecodecamp.org/">
-                        freeCodeCamp
-                    </a>
-                </li>
-
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
             </ul>
-
         </section>
-
     </main>
 
-
     <footer>
-
         <p>
-            &copy;
-            <span id="currentyear"></span>
-            ❤️ Daniella Isiuwa-Daniel ❤️ Nigeria
+            &copy;<span id="currentyear"></span> ❤️ Daniella Isiuwa-Daniel ❤️ Nigeria
         </p>
-
         <p id="lastModified"></p>
-
     </footer>
-
 
 </body>
 

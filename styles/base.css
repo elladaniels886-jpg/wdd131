@@ -1,17 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700&display=swap');
-
-
-/* ---------- RESET ---------- */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 /* ---------- BODY ---------- */
-
 body {
     font-family: "Montserrat", Arial, sans-serif;
     background-color: #f4f4f4;
@@ -19,13 +12,10 @@ body {
     font-size: 16px;
 }
 
-
 /* ---------- HEADER ---------- */
-
 header {
     background-color: #1f3b57;
 }
-
 
 #course-title {
     display: block;
@@ -37,15 +27,12 @@ header {
     font-weight: 700;
 }
 
-
 /* ---------- NAVIGATION ---------- */
-
 header nav {
     display: flex;
     justify-content: space-around;
     background-color: #162b3d;
 }
-
 
 header nav a {
     color: white;
@@ -56,24 +43,19 @@ header nav a {
     font-weight: 500;
 }
 
-
 header nav a:hover {
     background-color: #2e7d6b;
 }
 
-
 /* ---------- MAIN ---------- */
-
 main {
     max-width: 1100px;
     margin: 2rem auto;
     padding: 0 1rem;
-
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1.5rem;
 }
-
 
 h1 {
     grid-column: 1 / -1;
@@ -82,9 +64,7 @@ h1 {
     color: #1f3b57;
 }
 
-
 /* ---------- CARDS ---------- */
-
 .card {
     background-color: white;
     border: 1px solid #ddd;
@@ -92,7 +72,6 @@ h1 {
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .card h2 {
     background-color: #1f3b57;
@@ -102,46 +81,32 @@ h1 {
     font-family: "Roboto Slab", serif;
 }
 
-
 /* ---------- ABOUT ME ---------- */
-
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr auto;
     gap: 1.5rem;
-
     padding: 1.5rem;
     align-items: start;
 }
 
-
 .about-text p {
     line-height: 1.6;
-    margin-bottom: 1rem;
 }
 
-
-/* PROFILE IMAGE */
-
 .profile-image {
-
     width: 100%;
     max-width: 200px;
     height: auto;
-    max-height: 250px;
-    object-fit: cover;
-    border-radius: 4px;
     display: block;
-
+    border-radius: 4px;
 }
-
 
 /* ---------- COUNTRY SECTION ---------- */
-
 .country-section {
     padding: 1.5rem;
+    border-top: 1px solid #eee;
 }
-
 
 .country-section h3 {
     text-align: center;
@@ -150,20 +115,15 @@ h1 {
     color: #1f3b57;
 }
 
-
 .country-content {
-  display: flex;
+    display: flex;
     align-items: center;
     gap: 1.5rem;
 }
 
-
 .country-content p {
     line-height: 1.6;
 }
-
-
-/* FLAG IMAGE */
 
 .flag-image {
     width: 150px;
@@ -171,49 +131,37 @@ h1 {
     object-fit: contain;
 }
 
-
 /* ---------- RESOURCES ---------- */
-
-.card ul {
+.resources-card ul {
     padding: 1.5rem 2rem;
     list-style-position: inside;
 }
 
-
-.card li {
+.resources-card li {
     margin-bottom: 1rem;
 }
 
-
-.card a {
+.resources-card a {
     color: #1f3b57;
     font-weight: 600;
 }
 
-
-.card a:hover {
+.resources-card a:hover {
     color: #2e7d6b;
 }
 
-
 /* ---------- FOOTER ---------- */
-
 footer {
     background-color: #1f3b57;
     color: white;
-
     text-align: center;
-
     padding: 1.5rem;
 }
-
 
 footer p {
     margin: 0.5rem 0;
 }
 
-
 #lastModified {
     color: #f4c542;
 }
-
