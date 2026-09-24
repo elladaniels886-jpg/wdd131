@@ -1,0 +1,248 @@
+
+
+:root {
+    --primary-color: green;
+    --secondary-color: #ffffff;
+    --accent-color: yellow;
+    --dark-color: #12372a;
+    --light-color: #f4f8f5;
+    --text-color: #222222;
+
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--light-color);
+    line-height: 1.6;
+}
+
+
+
+
+header {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.hero {
+    position: relative;
+    background-color: var(--dark-color);
+}
+
+.hero picture,
+.hero img {
+    display: block;
+    width: 100%;
+}
+
+.hero img {
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-text {
+    padding: 1.5rem;
+    background-color: rgba(18, 55, 42, 0.95);
+    color: white;
+}
+
+.hero-text h2 {
+    font-family: var(--heading-font);
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.content {
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+    font-family: var(--heading-font);
+    color: var(--dark-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    margin-bottom: 0.8rem;
+}
+
+
+
+.facts {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+
+
+.weather {
+    text-align: center;
+}
+
+.weather-icon {
+    width: 70px;
+    height: 70px;
+    margin: 1rem auto;
+    display: block;
+}
+
+.weather-info {
+    text-align: left;
+}
+
+
+
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.4rem;
+}
+
+
+
+@media screen and (min-width: 700px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 5%;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero img {
+        height: 550px;
+        object-fit: cover;
+    }
+
+    .hero-text {
+        position: absolute;
+        left: 5%;
+        bottom: 8%;
+        max-width: 450px;
+        padding: 2rem;
+        background-color: rgba(18, 55, 42, 0.9);
+    }
+
+    .hero-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .card {
+        margin-bottom: 0;
+    }
+
+    /* Required pseudo-element */
+    .weather h2::after {
+        content: " ⛅";
+        margin-left: 0.5rem;
+    }
+
+    /* Hide SVG on wider screens */
+    .weather-icon {
+        display: none;
+    }
+
+    .weather {
+        text-align: left;
+    }
+}
+
+
+
+@media screen and (min-width: 1100px) {
+
+    header {
+        padding-left: calc((100% - 1160px) / 2);
+        padding-right: calc((100% - 1160px) / 2);
+    }
+
+    .content {
+        padding: 2rem 0;
+    }
+
+    .hero-text {
+        left: 3%;
+    }
+}

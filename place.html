@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Things about Nigeria, its geography, weather, population, and culture.">
+    <meta name="author" content="Daniella Isiuwa-Daniel">
+
+    <title>Nigeria | Country Page</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nigeria</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="place.html">Nigeria</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source
+                    media="(max-width: 600px)"
+                    srcset="images/nigeria-small.webp">
+
+                <source
+                    media="(min-width: 601px)"
+                    srcset="images/nigeria-large.webp">
+
+                <img
+                    src="images/nigeria-large.webp"
+                    alt="A beautiful view representing Nigeria"
+                    width="1200"
+                    height="600">
+            </picture>
+
+            <div class="hero-text">
+                <h2>Nigeria</h2>
+                <p>
+                    A vibrant country in West Africa known for its diverse
+                    cultures, beautiful landscapes, and energetic cities.
+                </p>
+            </div>
+        </section>
+
+        
+        <div class="content">
+
+            <section class="card">
+                <h2>About Nigeria</h2>
+
+                <p>
+                    Nigeria is located in West Africa and is one of the most
+                    culturally diverse countries on the continent. It is home
+                    to hundreds of ethnic groups and languages.
+                </p>
+
+                <p>
+                    The country has a variety of landscapes, including
+                    tropical forests, savannas, mountains, rivers, and
+                    coastal areas.
+                </p>
+
+                <div class="facts">
+                    <p><strong>Capital:</strong> Abuja</p>
+                    <p><strong>Largest City:</strong> Lagos</p>
+                    <p><strong>Continent:</strong> Africa</p>
+                    <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+                    <p><strong>Official Language:</strong> English</p>
+                </div>
+            </section>
+
+            
+            <section class="card weather">
+                <h2>Weather</h2>
+
+                <img
+                    class="weather-icon"
+                    src="images/weather.svg"
+                    alt="Partly cloudy weather icon">
+
+                <div class="weather-info">
+
+                    <p>
+                        <strong>Temperature:</strong>
+                        <span id="temperature">29</span> °C
+                    </p>
+
+                    <p>
+                        <strong>Conditions:</strong>
+                        Partly Cloudy
+                    </p>
+
+                    <p>
+                        <strong>Wind:</strong>
+                        <span id="wind-speed">10</span> km/h
+                    </p>
+
+                    <p>
+                        <strong>Wind Chill:</strong>
+                        <span id="wind-chill">N/A</span>
+                    </p>
+
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Daniella Isiuwa-Daniel
+        </p>
+
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+</body>
+</html>
