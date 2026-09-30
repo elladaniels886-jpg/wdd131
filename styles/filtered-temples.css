@@ -12,7 +12,7 @@ body {
 }
 
 
-/* HEADER */
+
 
 header {
     background-color: #3d3028;
@@ -33,7 +33,7 @@ header {
 }
 
 
-/* HAMBURGER */
+
 
 .hamburger {
     background: none;
@@ -44,7 +44,7 @@ header {
 }
 
 
-/* NAVIGATION */
+
 
 nav {
     display: none;
@@ -75,7 +75,7 @@ nav a.active {
 }
 
 
-/* MAIN */
+
 
 main {
     max-width: 1100px;
@@ -91,7 +91,7 @@ h1 {
 }
 
 
-/* TEMPLE GRID */
+
 
 .temple-grid {
     display: grid;
@@ -100,7 +100,7 @@ h1 {
 }
 
 
-/* TEMPLE CARDS */
+
 
 .temple-grid article {
     background-color: white;
@@ -110,7 +110,7 @@ h1 {
 }
 
 
-/* TEMPLE NAME */
+
 
 .temple-grid article h2 {
     font-family: "Playfair Display", serif;
@@ -120,14 +120,14 @@ h1 {
 }
 
 
-/* TEMPLE INFORMATION */
+
 
 .temple-grid article p {
     margin: 0.4rem 0;
 }
 
 
-/* TEMPLE IMAGE */
+
 
 .temple-grid article img {
     width: 100%;
@@ -139,7 +139,6 @@ h1 {
 }
 
 
-/* FOOTER */
 
 footer {
     background-color: #3d3028;
@@ -154,7 +153,6 @@ footer p {
 }
 
 
-/* TABLET AND DESKTOP */
 
 @media (min-width: 768px) {
 
