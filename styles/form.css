@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ea;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #263238;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+main {
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+label,
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+label span,
+legend span {
+    font-size: 0.85rem;
+    font-weight: normal;
+    color: #555;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.4rem;
+    border: 1px solid #777;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid #f4b942;
+    border-color: #263238;
+}
+
+fieldset {
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+fieldset label {
+    font-weight: normal;
+    margin-top: 0.5rem;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.rating label {
+    font-size: 1.3rem;
+}
+
+.rating input {
+    margin-right: 0.4rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 0.4rem;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4b942;
+    color: #222;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #d99b20;
+}
+
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        padding: 0;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    .rating {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+
+.confirmation {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.confirmation h2 {
+    margin-bottom: 1rem;
+    color: #263238;
+}
+
+.confirmation p {
+    margin: 1rem 0;
+}
+
+.confirmation a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #f4b942;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.confirmation a:hover {
+    background-color: #d99b20;
+}
