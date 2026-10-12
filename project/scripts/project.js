@@ -156,14 +156,24 @@ filterButtons.forEach((button) => {
 });
 
 if (menuButton && navigation) {
+    menuButton.setAttribute("aria-expanded", "false");
+
     menuButton.addEventListener("click", () => {
-        const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
-
-        menuButton.setAttribute("aria-expanded", String(!isExpanded));
         navigation.classList.toggle("show");
-    });
-}
 
+        const isExpanded = navigation.classList.contains("show");
+
+        menuButton.setAttribute("aria-expanded", String(isExpanded));
+        menuButton.setAttribute(
+            "aria-label",
+            isExpanded ? "Close navigation menu" : "Open navigation menu"
+        );
+
+        console.log("Navigation open:", isExpanded);
+    });
+} else {
+    console.error("Menu button or navigation element was not found.");
+}
 const yearElement = document.querySelector("#currentyear");
 const modifiedElement = document.querySelector("#lastModified");
 
