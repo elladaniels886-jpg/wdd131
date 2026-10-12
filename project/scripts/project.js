@@ -53,8 +53,8 @@ const techniques = [
 const techniqueList = document.querySelector("#technique-list");
 const filterButtons = document.querySelectorAll(".filter-button");
 const savedCount = document.querySelector("#saved-count");
-const menuButton = document.querySelector("#menu-button");
-const navigation = document.querySelector("#navigation");
+const menuButton = document.querySelector(".menu-button");
+const navigation = document.querySelector(".navigation");
 
 let currentFilter = "all";
 let savedTechniques = JSON.parse(localStorage.getItem("savedTechniques")) || [];
