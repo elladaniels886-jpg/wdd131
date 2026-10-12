@@ -89,6 +89,18 @@ img {
 .navigation {
     display: none;
 }
+.navigation.show {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1.25rem;
+    background-color: var(--charcoal);
+    z-index: 1000;
+}
 
 .navigation a {
     color: var(--white);
