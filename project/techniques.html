@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Learn essential CapCut video editing techniques with EditFlow.">
+    <meta name="author" content="Daniella">
+
+    <title>Techniques | EditFlow</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <a class="logo" href="index.html">
+                <span class="logo-mark">E</span>
+                <span>EditFlow</span>
+            </a>
+
+            <button class="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="techniques.html" class="active">Techniques</a>
+                <a href="tips.html">Tips & Resources</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <div>
+                <p class="eyebrow">EDITING TECHNIQUES</p>
+
+                <h1>Build your editing skills.</h1>
+
+                <p>
+                    Learn the techniques that can make your videos
+                    smoother, clearer, and more engaging without
+                    overcomplicating your edits.
+                </p>
+            </div>
+        </section>
+
+        <section class="section techniques-section">
+
+            <div class="section-heading">
+                <p class="eyebrow">EXPLORE</p>
+                <h2>Choose a technique</h2>
+                <p>
+                    Filter the techniques by skill area or difficulty
+                    to find something that matches what you want to learn.
+                </p>
+            </div>
+
+           <div class="filter-controls" aria-label="Technique filters">
+
+    <button class="filter-button active" data-filter="all">
+        All
+    </button>
+
+    <button class="filter-button" data-filter="beginner">
+        Beginner
+    </button>
+
+    <button class="filter-button" data-filter="motion">
+        Motion
+    </button>
+
+    <button class="filter-button" data-filter="text">
+        Text
+    </button>
+
+    <button class="filter-button" data-filter="audio">
+        Audio
+    </button>
+
+    <button class="filter-button" data-filter="color">
+        Color
+    </button>
+
+</div>
+            <div id="technique-list" class="technique-grid">
+                <!-- JavaScript will create the technique cards here -->
+            </div>
+
+        </section>
+
+        <section class="saved-section">
+
+            <div class="saved-container">
+
+                <div>
+                    <p class="eyebrow">YOUR SAVED TECHNIQUES</p>
+
+                    <h2>Keep track of what you want to practice.</h2>
+
+                    <p>
+                        Save techniques that you want to come back to
+                        later. Your saved techniques are stored in your
+                        browser.
+                    </p>
+                </div>
+
+                <div class="saved-count-box">
+                    <span id="saved-count">0</span>
+                    <p>Saved</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div>
+                <a class="logo footer-logo" href="index.html">
+                    <span class="logo-mark">E</span>
+                    <span>EditFlow</span>
+                </a>
+
+                <p>
+                    A beginner-friendly guide to better video editing.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="techniques.html">Techniques</a>
+                <a href="tips.html">Tips & Resources</a>
+                <a href="references.html">References</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; <span id="currentyear"></span> EditFlow
+            </p>
+             <p>
+            ❤️Daniella-Isiuwa-Daniel❤️ 
+            </p>
+
+            <p id="lastModified"></p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

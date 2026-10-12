@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore beginner CapCut editing tips, common mistakes, and practical advice for creating better videos.">
+    <meta name="author" content="EditFlow">
+    <title>Tips &amp; Resources | EditFlow</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">Edit<span>Flow</span></a>
+
+        <button id="menu-button" class="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="navigation">
+            ☰
+        </button>
+
+        <nav id="navigation" class="navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="techniques.html">Techniques</a>
+            <a href="tips.html" aria-current="page">Tips &amp; Resources</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">THE EDITING TOOLKIT</p>
+            <h1>Small changes. Better videos.</h1>
+            <p>Learn practical editing habits, avoid common mistakes, and build confidence one video at a time.</p>
+        </section>
+
+        <section class="tips-section" aria-labelledby="tips-heading">
+            <div class="section-heading">
+                <p class="eyebrow">WORK SMARTER</p>
+                <h2 id="tips-heading">Tips for better edits</h2>
+                <p>You don't need complicated effects to make a video look good. Start with the basics.</p>
+            </div>
+
+            <div class="tips-grid">
+                <article class="tip-card">
+                    <span class="tip-number">01</span>
+                    <h3>Tell a clear story</h3>
+                    <p>Arrange clips in an order that makes sense. Remove footage that doesn't support the message or mood.</p>
+                    <p class="tip-takeaway"><strong>Try this:</strong> Watch your video without sound. Can you still follow what is happening?</p>
+                </article>
+
+                <article class="tip-card">
+                    <span class="tip-number">02</span>
+                    <h3>Keep transitions simple</h3>
+                    <p>Too many flashy transitions can distract viewers. Clean cuts and subtle fades are often enough.</p>
+                    <p class="tip-takeaway"><strong>Try this:</strong> Use one or two transition styles throughout a short video.</p>
+                </article>
+
+                <article class="tip-card">
+                    <span class="tip-number">03</span>
+                    <h3>Make audio count</h3>
+                    <p>Music can establish the mood, but it should not overpower dialogue or important sounds.</p>
+                    <p class="tip-takeaway"><strong>Try this:</strong> Listen with headphones before exporting your edit.</p>
+                </article>
+
+                <article class="tip-card">
+                    <span class="tip-number">04</span>
+                    <h3>Make text readable</h3>
+                    <p>Choose clear fonts, strong contrast, and enough time for viewers to read each line.</p>
+                    <p class="tip-takeaway"><strong>Try this:</strong> Preview your video on a phone screen before publishing.</p>
+                </article>
+
+                <article class="tip-card">
+                    <span class="tip-number">05</span>
+                    <h3>Keep your colors consistent</h3>
+                    <p>Large differences in brightness and color between clips can make an edit feel disconnected.</p>
+                    <p class="tip-takeaway"><strong>Try this:</strong> Compare neighboring clips and make small adjustments where needed.</p>
+                </article>
+
+                <article class="tip-card">
+                    <span class="tip-number">06</span>
+                    <h3>Check before exporting</h3>
+                    <p>Watch the complete video to catch awkward cuts, spelling mistakes, black frames, or audio problems.</p>
+                    <p class="tip-takeaway"><strong>Try this:</strong> Play the final export from beginning to end before sharing it.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="mistakes-section" aria-labelledby="mistakes-heading">
+            <p class="eyebrow">LEARN AS YOU GO</p>
+            <h2 id="mistakes-heading">Common beginner mistakes</h2>
+
+            <div class="mistake-list">
+                <article class="mistake-item">
+                    <h3>Adding effects to every clip</h3>
+                    <p><strong>Instead:</strong> Use effects to emphasize important moments, not to fill every second.</p>
+                </article>
+
+                <article class="mistake-item">
+                    <h3>Ignoring audio levels</h3>
+                    <p><strong>Instead:</strong> Balance music, dialogue, and sound effects so the main audio stays clear.</p>
+                </article>
+
+                <article class="mistake-item">
+                    <h3>Exporting without reviewing</h3>
+                    <p><strong>Instead:</strong> Watch the finished export and check its quality before posting.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="learning-form-section" aria-labelledby="learning-heading">
+            <div class="learning-form-intro">
+                <p class="eyebrow">YOUR NEXT STEP</p>
+                <h2 id="learning-heading">What do you want to learn next?</h2>
+                <p>Choose a topic and your current experience level to get a suggested next step.</p>
+            </div>
+
+            <form id="learning-form">
+                <label for="learning-topic">What interests you most?</label>
+                <select id="learning-topic" name="topic" required>
+                    <option value="">Choose a topic</option>
+                    <option value="motion">Smooth movement and keyframes</option>
+                    <option value="text">Text and captions</option>
+                    <option value="audio">Music and audio syncing</option>
+                    <option value="color">Color and visual style</option>
+                    <option value="basics">Basic editing skills</option>
+                </select>
+
+                <label for="experience-level">Your editing experience</label>
+                <select id="experience-level" name="experience" required>
+                    <option value="">Choose your level</option>
+                    <option value="new">I'm completely new</option>
+                    <option value="beginner">I know the basics</option>
+                    <option value="confident">I'm ready for a challenge</option>
+                </select>
+
+                <button class="primary-button" type="submit">Get my learning tip</button>
+            </form>
+
+            <div id="learning-response" class="learning-response" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="logo" href="index.html">Edit<span>Flow</span></a>
+        <p>Helping beginners edit with confidence.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="techniques.html">Techniques</a>
+            <a href="references.html">References</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> EditFlow. All rights reserved.</p>
+         <p>
+            ❤️Daniella-Isiuwa-Daniel❤️ 
+        </p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
